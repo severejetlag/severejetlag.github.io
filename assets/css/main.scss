@@ -1,0 +1,16 @@
+/* custom styles */
+#main-nav{display: block;
+	ul{
+		display: block;
+		li{
+			display: block;
+			a{text-transform: uppercase;}
+		}
+	}
+}
+
+#main-content{
+	width: 1000px;
+	margin: 0px auto;
+}
+
