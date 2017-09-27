@@ -1,4 +1,9 @@
 /* custom styles */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 #main-nav {
   display: block; }
   #main-nav ul {
@@ -11,5 +16,9 @@
 #main-content {
   width: 1000px;
   margin: 0px auto; }
+
+#header {
+  text-transform: uppercase;
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
