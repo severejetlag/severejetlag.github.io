@@ -1,5 +1,8 @@
 /* custom styles */
-.cf {
+
+$page-width: 1000px;
+
+%cf {
   &:after {
     content: "";
     display: table;
@@ -7,19 +10,54 @@
   }
 }
 
+#header{ 
+	@extend %cf;
+	background:#ccc;
+	.container{
+		width: $page-width;
+		margin: 0px auto; 
+	}
+	a{
+		display: block;
+		float: left;
+		padding: 10px 0;
+	}
+	img{
+		width: 80px;
+		border-radius: 50%;
+		display: block;
+	}
+	h1{
+		margin: 0;
+		float: left;
+		margin: 30px;
+	}
+}
+
 
 #main-nav{display: block;
 	ul{
-		display: block;
+		text-align: right;
+		list-style: none;
+		margin: 0;
 		li{
-			display: block;
-			a{text-transform: uppercase;}
+			display: inline-block;
+			a{
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 2em;
+				padding: 30px 20px;
+				color: #777;
+				&:hover{
+					color: #000;
+				}
+			}
 		}
 	}
 }
 
 #main-content{
-	width: 1000px;
+	width: $page_width;
 	margin: 0px auto;
 }
 #header{
