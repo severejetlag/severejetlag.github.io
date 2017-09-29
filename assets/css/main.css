@@ -7,11 +7,24 @@
   clear: both; }
 
 body {
-  background: #eee; }
+  background: #ededed;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #111;
+  font-size: 1em; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+  ul > li {
+    list-style: none; }
+
+/* Header section and variables */
 #header {
-  background: #dadada;
-  border-bottom: 1px solid #ccc; }
+  background: #ef5350;
+  border-bottom: 1px solid #b61827;
+  text-transform: uppercase;
+  display: block; }
   #header .container {
     width: 1000px;
     margin: 0px auto; }
@@ -22,12 +35,15 @@ body {
   #header img {
     width: 80px;
     border-radius: 50%;
-    display: block; }
+    display: block;
+    border: 1px solid #b61827; }
   #header h1 {
     margin: 0;
     float: left;
-    margin: 30px; }
+    margin: 30px;
+    font-weight: 600; }
 
+/* Nav CSS */
 #main-nav {
   display: block; }
   #main-nav ul {
@@ -41,16 +57,98 @@ body {
         text-decoration: none;
         font-size: 2em;
         padding: 30px 20px;
-        color: #777; }
+        color: #111;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
         #main-nav ul li a:hover {
-          color: #000; }
+          color: #fff; }
 
-#main-content {
-  width: 1000px;
-  margin: 0px auto; }
+/* Main content CSS */
+.content-section {
+  padding: 30px 20px 50px; }
+  .content-section .row {
+    width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+    z-index: 2;
+    position: relative; }
+  .content-section .section-header {
+    font-size: 3em;
+    text-transform: uppercase; }
+    .content-section .section-header i {
+      margin-left: 10px; }
+  .content-section p {
+    font-size: 1.1em;
+    line-height: 2; }
+  .content-section a {
+    font-size: 1.1em; }
 
-#header {
-  text-transform: uppercase;
-  display: block; }
+/* About Section */
+#about {
+  background: url(../../images/IMG_2617.JPG) no-repeat 0 -300px;
+  background-size: 100%;
+  position: relative; }
+  #about:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 134, 124, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 1; }
+
+/* Work Section */
+#work {
+  background: #01579b;
+  color: #fff; }
+  #work ul {
+    font-size: 0; }
+    #work ul li {
+      font-size: 18px;
+      vertical-align: top;
+      display: inline-block;
+      width: 25%;
+      padding: 10px;
+      box-sizing: border-box;
+      padding: 10px; }
+  #work a {
+    padding: 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #4f83cc;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    #work a:hover {
+      border-color: #fff; }
+    #work a i {
+      display: block;
+      font-size: 3em; }
+
+/* Contact Section */
+#contact {
+  background: #b61827;
+  color: #fff; }
+  #contact ul li {
+    padding: 10px; }
+  #contact a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    #contact a:hover {
+      border-color: #fff; }
+    #contact a i {
+      margin-left: 15px; }
 
 /*# sourceMappingURL=main.css.map */

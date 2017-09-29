@@ -10,8 +10,10 @@
   <!-- mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- styles -->
-  <link rel="stylesheet" type="text/css" href="vendor/css/nor<link rel="stylesheet" href="https://use.fontawesome.com/141dce00c5.css">malize.css">
-  <link rel="stylesheet" type="t<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">ext/css" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/141dce00c5.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <!-- favicon -->
   <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
   <!-- scripts -->
@@ -30,9 +32,9 @@
         <!-- Nav Section -->
         <nav id="main-nav">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -41,28 +43,87 @@
     <!--Start of Main Body-->
     <main id="main-content">
       <!-- About Section  -->
-      <section id="about">
+      <section class="content-section" id="about">
         <div class="row">
-          <h1>About</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque minima dolore beatae esse aliquam illum atque eligendi consequuntur voluptas, quisquam adipisci cupiditate culpa doloribus deserunt quo. Sequi neque obcaecati ducimus?</p>
+          <h1 class="section-header">About <i class="fa fa-user-circle" aria-hidden="true"></i></h1>
+
+          <p>Hi all! Thanks for taking a look at my site. I wanted to take a minute to tell you a bit more about myself. I was born and raised in the Boston area in a city called Quincy. While I moved around starting when I went to boarding school, I spent most of my time in the Northeast.</p>
+
+          <p>Once I finished up with college at Syracuse University, I was lucky enough to receive an offer from Google in the ITRP Program. I worked at the big G for the last two years in a helpdesk role before deciding to swich up my career and get back into Web development.</p>
+
+          <p>Below are a few links to some of my work, and if you would like to get in touch, please feel free to reach out below!</p>
         </div>
       </section>
 
-      <section id="work">
+      <section class="content-section" id="work">
         <!-- Personal Work Section -->
         <div class="row">
-          <h1>My Work</h1>
+          <h1 class="section-header">My Work <i class="fa fa-github" aria-hidden="true"></i></h1>
+          
           <ul>
-            <li><a href="https://github.com/severejetlag/wdi-fundamentals-memorygame">Memory Game</a></li>
-            <li><a href="https://github.com/severejetlag/blank_template">Class Work</a></li>
+            <li>
+              <a href="https://github.com/severejetlag/wdi-fundamentals-memorygame">
+                Memory Game<i class="fa fa-code" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/severejetlag/blank_template">
+                Class Work<i class="fa fa-code" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/severejetlag/functions-exercises">
+                Functions!<i class="fa fa-code" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/severejetlag/jquery-events-lab">
+                JQuery Exercises<i class="fa fa-code" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/severejetlag/js-control-flow-training">
+                Control Flow<i class="fa fa-code" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/severejetlag/dev-tools-training">
+                Dev Tools Training<i class="fa fa-code" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/severejetlag/site-recreation">
+                Site Recreating<i class="fa fa-code" aria-hidden="true"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
       
       <!-- Contact Section -->
-      <section id="contact">
+      <section class="content-section" id="contact">
         <div class="row">
-          <h1>Contact</h1>
+          <h1 class="section-header">Contact <i class="fa fa-id-card" aria-hidden="true"></i></h1>
+          <ul>
+            <li>
+              <a href="mailto:nhl1013@gmail.com" target="blank_">
+                nhl1013@gmail.com<i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+1-617-750-7745">617-750-7745<i class="fa fa-mobile" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a target="blank_" href="https://www.linkedin.com/in/nickhmlee/">
+                in/nickhmlee<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/severejetlag?tab=repositories" target="blank_">
+                GitHub/severejetlag<i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
