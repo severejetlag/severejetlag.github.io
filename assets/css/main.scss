@@ -1,7 +1,12 @@
 /* custom styles */
 
+/* Color and width variables */
 $page-width: 1000px;
+$body-color: #eee;
+$header-color: #dadada;
+$header-border: #ccc;
 
+/* Extend classes */
 %cf {
   &:after {
     content: "";
@@ -10,10 +15,15 @@ $page-width: 1000px;
   }
 }
 
+body{
+	background: $body-color;
+}
+
 #header{ 
-	@extend %cf;
-	background:#ccc;
+	background: $header-color;
+	border-bottom: 1px solid $header-border;
 	.container{
+		@extend %cf;
 		width: $page-width;
 		margin: 0px auto; 
 	}

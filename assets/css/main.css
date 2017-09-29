@@ -1,11 +1,17 @@
 /* custom styles */
-#header:after {
+/* Color and width variables */
+/* Extend classes */
+#header .container:after {
   content: "";
   display: table;
   clear: both; }
 
+body {
+  background: #eee; }
+
 #header {
-  background: #ccc; }
+  background: #dadada;
+  border-bottom: 1px solid #ccc; }
   #header .container {
     width: 1000px;
     margin: 0px auto; }
