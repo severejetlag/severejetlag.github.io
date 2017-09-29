@@ -46,6 +46,11 @@ ul{margin: 0;padding: 0;
 
 /* Header section and variables */ 
 #header{ 
+	position: fixed;
+	top:0px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
 	background: $red;
 	border-bottom: 1px solid $red-dark;
 	text-transform: uppercase;
@@ -61,16 +66,16 @@ ul{margin: 0;padding: 0;
 		padding: 10px 0;
 	}
 	img{
-		width: 80px;
+		width: 60px;
 		border-radius: 50%;
 		display: block;
 		border:1px solid $red-dark;
 	}
 	h1{
-		margin: 0;
 		float: left;
-		margin: 30px;
+		margin: 20px;
 		font-weight: 600;
+		font-size: 1.6em;
 	}
 }
 
@@ -85,8 +90,8 @@ ul{margin: 0;padding: 0;
 			a{
 				text-transform: uppercase;
 				text-decoration: none;
-				font-size: 2em;
-				padding: 30px 20px;
+				font-size: 1.6em;
+				padding: 20px 20px;
 				color: #111;
 				@include transition(.2s);
 				&:hover{
@@ -100,7 +105,7 @@ ul{margin: 0;padding: 0;
 /* Main content CSS */ 
 #main-content{}
 .content-section{
-	padding: 30px 20px 50px;
+	padding: 60px 20px 50px;
 
 	.row{
 		width: $page-width;
@@ -193,5 +198,18 @@ ul{margin: 0;padding: 0;
 		}
 		i{margin-left: 15px;}
 	}
+}
+
+/* Footer Section */
+#footer{
+	background:$blue-dark;
+	.container{}
+	.row{
+		width: $page-width;
+		margin: 0px auto;
+		padding: 200px 40px 100px;
+		text-align: center;
+	}
+	p{color: #fff;}
 }
 

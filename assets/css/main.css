@@ -21,6 +21,11 @@ ul {
 
 /* Header section and variables */
 #header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   background: #ef5350;
   border-bottom: 1px solid #b61827;
   text-transform: uppercase;
@@ -33,15 +38,15 @@ ul {
     float: left;
     padding: 10px 0; }
   #header img {
-    width: 80px;
+    width: 60px;
     border-radius: 50%;
     display: block;
     border: 1px solid #b61827; }
   #header h1 {
-    margin: 0;
     float: left;
-    margin: 30px;
-    font-weight: 600; }
+    margin: 20px;
+    font-weight: 600;
+    font-size: 1.6em; }
 
 /* Nav CSS */
 #main-nav {
@@ -55,8 +60,8 @@ ul {
       #main-nav ul li a {
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 2em;
-        padding: 30px 20px;
+        font-size: 1.6em;
+        padding: 20px 20px;
         color: #111;
         -moz-transition: 0.2s;
         -o-transition: 0.2s;
@@ -67,7 +72,7 @@ ul {
 
 /* Main content CSS */
 .content-section {
-  padding: 30px 20px 50px; }
+  padding: 60px 20px 50px; }
   .content-section .row {
     width: 1000px;
     margin: 0px auto;
@@ -150,5 +155,16 @@ ul {
       border-color: #fff; }
     #contact a i {
       margin-left: 15px; }
+
+/* Footer Section */
+#footer {
+  background: #002f6c; }
+  #footer .row {
+    width: 1000px;
+    margin: 0px auto;
+    padding: 200px 40px 100px;
+    text-align: center; }
+  #footer p {
+    color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
