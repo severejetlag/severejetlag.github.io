@@ -1,7 +1,7 @@
 /* custom styles */
 /* Color and width variables */
 /* Extend classes */
-#header .container:after {
+#header .container:after, #main-nav:after {
   content: "";
   display: table;
   clear: both; }
@@ -92,7 +92,7 @@ ul {
 
 /* About Section */
 #about {
-  background: url(../../images/IMG_2617.JPG) no-repeat 0 -300px;
+  background: url(../../images/IMG_2617.JPG) no-repeat center;
   background-size: 100%;
   position: relative; }
   #about:before {

@@ -12,12 +12,11 @@ $page-width: 1000px;
 $body-color: #ededed;
 
 /* Extend classes */
-%cf {
-  &:after {
+%cf:after {
     content: "";
     display: table;
     clear: both;
-  }
+  
 }
 
 @mixin transition($transition...) {
@@ -80,7 +79,8 @@ ul{margin: 0;padding: 0;
 }
 
 /* Nav CSS */ 
-#main-nav{display: block;
+#main-nav{display: block; 
+	@extend %cf;
 	ul{
 		text-align: right;
 		list-style: none;
@@ -131,7 +131,7 @@ ul{margin: 0;padding: 0;
 
 /* About Section */
 #about{
-	background: url(../../images/IMG_2617.JPG) no-repeat 0 -300px ;
+	background: url(../../images/IMG_2617.JPG) no-repeat center;
 	background-size: 100%;
 	position: relative;
 	&:before{
